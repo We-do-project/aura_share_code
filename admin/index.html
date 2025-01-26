@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="admin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="logo-details">
+            <img src="image.png" style="border-radius: 50%; height: 50px;">
+            <span class="logo_name">Aura</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#" class="active">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="active">
+                    <i class='bx bxs-user-voice'></i>
+                    <span class="link_name">Give Announcement</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="active">
+                    <i class='bx bxs-group'></i>
+                    <span class="link_name">Manage Users</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="active">
+                    <i class='bx bxs-chat'></i>
+                    <span class="link_name">Request</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="active">
+                    <i class='bx bx-log-in'></i>
+                    <span class="link_name">Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button" onclick="toggleSidebar()">
+                <i class='bx bx-menu'></i>
+                <span class="dashboard">Dashboard</span>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <i class='bx bx-search'></i>
+            </div>
+            <div class="profile-details">
+                <i class='bx bx-user-circle'></i>
+                <span class="admin_name">Admin</span>
+                <i class='bx bx-chevron-down'></i>
+            </div>
+        </nav>
+          <!-- Cards -->
+        <div class="cards">
+            <div class="card">
+                <h3>Statistics Overview</h3>
+                <h1>40,876</h1>
+                <p>Total User</p>
+                <h1>40,876</h1>
+                <p>Total post</p>
+                <h1>40,876</h1>
+                <p>Pending Approval</p>
+            </div>
+            <div class="card">
+                <h3>User Management</h3>
+                <h1>admin</h1><p>5</p>
+                <h1>Editor</h1><p>10</p>
+                <h1>Regular user</h1><p>525</p>
+            </div>
+            <!-- <div class="card">
+                <h3>Total Profit</h3>
+                <h1>$12,876</h1>
+                <p>Up from yesterday</p>
+            </div>
+            <div class="card">
+                <h3>Total Returns</h3>
+                <h1>11,086</h1>
+                <p style="color: red;">Down from today</p>
+            </div> -->
+        </div>
+
+        <div class="recent-activities">
+            <h2>Recent Activities</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>User</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10:00 AM</td>
+                        <td>Admin logged in</td>
+                        <td>Admin</td>
+                    </tr>
+                    <tr>
+                        <td>10:15 AM</td>
+                        <td>New user registered</td>
+                        <td>John Doe</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 AM</td>
+                        <td>Announcement posted</td>
+                        <td>Admin</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 AM</td>
+                        <td>User updated profile</td>
+                        <td>Jane Smith</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 AM</td>
+                        <td>Request approved</td>
+                        <td>Mark Johnson</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="notifications">
+            <h2>Notifications</h2>
+            <div class="notification-item">
+                <p><strong>New message from Admin:</strong> "Please check your emails."</p>
+            </div>
+            <div class="notification-item">
+                <p><strong>System update:</strong> "Update completed successfully."</p>
+            </div>
+            <div class="notification-item">
+                <p><strong>New comment:</strong> "Great job on your recent post!"</p>
+            </div>
+            <div class="notification-item">
+                <p><strong>Friend request:</strong> "User  Jane Doe has sent you a friend request."</p>
+            </div>
+            <div class="notification-item">
+                <p><strong>Reminder:</strong> "Team meeting scheduled for tomorrow at 3 PM."</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

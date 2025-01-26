@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 85%;
+}
+.sidebar{
+    position: fixed;
+    height: 100%;
+    width: 240px;
+    background: #0A2558;
+}
+.sidebar .logo-details{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.sidebar .logo-details .logo_name{
+    font-size:30px ;
+    font-weight: 800;
+    color: #fff;
+    /* margin-left: 8px; */
+}
+.sidebar .nav-links{
+    margin-top: 16px;
+
+}
+.sidebar .nav-links li{
+    height: 50px;
+    width: 100%;
+    /* position: relative; */
+    list-style: none;
+}
+.sidebar .nav-links li a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease ;
+}
+.sidebar .nav-links li a:hover{
+    background: #081D45;
+}
+.sidebar .nav-links li a i{
+    min-width: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+.sidebar .nav-links li a .link_name{
+    color: #fff;
+   font-size: 15px;
+   font-weight: 400; 
+}
+
+/* ---------home-section------------ */
+
+.home-section{
+    background: #f5f5f5;
+    position: relative;
+    min-height: 100vh;
+    width: calc(100% -240px);
+    left:240px ;
+}
+.home-section nav{
+   
+    height: 80px;
+    background: #fff;
+    padding:0 20px ;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+.home-section nav .sidebar-button{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+
+}
+.home-section nav .sidebar-button .dashboard{
+    font-size: 35px;
+    margin-right: 10px;
+}
+.home-section nav .search-box{
+    height: 50px;
+    width: 550px;
+    margin: 0 20px;
+    position: relative;
+
+}
+nav .search-box input{
+    position:absolute ;
+    height: 100%;
+    width: 100%;
+    border-radius:6px ;
+    padding: 0 15px;
+    font-size: 17px;
+    /* color: #fff; */
+    background:#f5f6fa ;
+    border: 2px solid #efeef1;
+    outline: none;
+}
+nav .search-box .bx-search{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 40px;
+    background: #2697ff;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+}
+.home-section nav .profile-details{
+    display: flex;
+    height: 50px;
+    min-width: 190px;
+    background: #f5f6fa;
+    border: 2px solid #efeef1;
+    border-radius: 6px;
+    padding: 0 15px 0 2px;
+    align-items: center;
+    /* margin-left: 15px; */
+}
+/* nav .profile-details i{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 6px;
+} */
+nav .profile-details .admin_name{
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 10px;
+    white-space: nowrap;
+}
+nav .profile-details i{
+    color: #333;
+    font-size: 25px;
+
+}
+/* 
+.box {
+    flex: 1 1 calc(50% - 20px); 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 150px;
+    width: 45%;
+} */
+
+h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+p {
+    margin: 5px 0;
+    color: #666;
+}
+
+        /* Cards container */
+        .cards {
+            display: flex;
+            justify-content: space-between; 
+            margin-top: 20px;
+            margin: 20px;
+    
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 45%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            height: 50%;
+        }
+    
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card h1 {
+            color: #333;
+            font-size: 28px;
+        }
+
+        .card p {
+            color: green;
+            font-size: 12px;
+        }
+
+        /* Sales Table */
+        /* .sales, .top-products {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align:center ;
+        } */
+
+        .recent-activities {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px; /* Add margin for spacing */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .recent-activities h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .recent-activities table {
+            width: 100%; /* Full width */
+            border-collapse: collapse; /* Collapse borders */
+        }
+        
+        .recent-activities th, .recent-activities td {
+            padding: 10px; /* Padding for cells */
+            text-align: left; /* Align text to the left */
+            border-bottom: 1px solid #eee; /* Bottom border for separation */
+        }
+        
+        .recent-activities th {
+            background-color: #f5f5f5; /* Light background for header */
+            font-weight: bold; /* Bold text for header */
+        }
+        
+        .recent-activities tr:hover {
+            background-color: #f1f1f1; /* Highlight row on hover */
+        }
+
+      
+        .notifications {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px; /* Add margin for spacing */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .notifications h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .notification-item {
+            padding: 10px; /* Padding for each notification */
+            border-bottom: 1px solid #eee; /* Bottom border for separation */
+        }
+        
+        .notification-item:last-child {
+            border-bottom: none; /* Remove border from the last item */
+        }
+        
+        .notification-item p {
+            margin: 0; /* Remove default margin */
+        }
+        
+        .notification-item p strong {
+            color: #007bff; /* Optional: Change color for emphasis */
+        }
